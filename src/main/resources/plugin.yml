@@ -1,0 +1,24 @@
+name: DeadFlower
+version: '2.0'
+main: ru.deceased16.deadFlower.DeadFlower
+api-version: '1.21'
+authors:
+  - Oceangrad
+  - deceased16
+commands:
+  flower:
+    aliases:
+      - flower
+    description: "
+    \nYou can set your flower if you are holding one. Every flower will give you effect.
+    \nIf a player with a flower kills another player with flower then killer gets killed player's flower.
+    \nIf flower was planted it's owner gets teleported to it.
+    \nIf you try to get rid of your flower you get withered for a bit.
+    "
+    usage:
+      "\n/flower set: sets your flower 
+      \n/flower get: returns your flower(with withering effect)
+       \n/flower clear: clears your flower(with withering effect)
+      \n/flower help: this page"
+
+

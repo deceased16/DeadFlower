@@ -1,0 +1,8 @@
+ru\deceased16\deadFlower\collections\flowercollection\FlowerCollection.class
+ru\deceased16\deadFlower\compliters\FlowerCommandsCompliter.class
+ru\deceased16\deadFlower\collections\flowercollection\Flower.class
+ru\deceased16\deadFlower\events\DeadFlowerEvent$1.class
+ru\deceased16\deadFlower\commands\FlowerCommands.class
+ru\deceased16\deadFlower\DeadFlower.class
+ru\deceased16\deadFlower\events\DeadFlowerEvent.class
+ru\deceased16\deadFlower\collections\effectcollection\FlowerEffect.class
