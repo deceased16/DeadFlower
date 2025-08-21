@@ -58,8 +58,7 @@ public class FlowerCollection {
                 new Flower(Material.ROSE_BUSH, new FlowerEffect(PotionEffectType.REGENERATION, 1)),
                 new Flower(Material.PEONY, new FlowerEffect(PotionEffectType.JUMP_BOOST, 3)),
                 new Flower(Material.LILY_OF_THE_VALLEY, new FlowerEffect(PotionEffectType.LUCK, 1)),
-                new Flower(Material.SPORE_BLOSSOM, new FlowerEffect(PotionEffectType.NIGHT_VISION, 1)),
-                new Flower(Material.WITHER_ROSE, new FlowerEffect(PotionEffectType.WITHER, 1))
+                new Flower(Material.SPORE_BLOSSOM, new FlowerEffect(PotionEffectType.NIGHT_VISION, 1))
         );
     }
 }
