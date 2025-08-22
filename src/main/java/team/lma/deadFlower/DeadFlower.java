@@ -1,8 +1,8 @@
-package ru.deceased16.deadFlower;
+package team.lma.deadFlower;
 
-import ru.deceased16.deadFlower.commands.FlowerCommands;
-import ru.deceased16.deadFlower.compliters.FlowerCommandsCompliter;
-import ru.deceased16.deadFlower.events.DeadFlowerEvent;
+import team.lma.deadFlower.commands.FlowerCommands;
+import team.lma.deadFlower.compliters.FlowerCommandsCompliter;
+import team.lma.deadFlower.events.DeadFlowerEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
