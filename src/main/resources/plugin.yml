@@ -1,6 +1,6 @@
 name: DeadFlower
-version: '2.0'
-main: ru.deceased16.deadFlower.DeadFlower
+version: '1.0'
+main: team.lma.deadFlower.DeadFlower
 api-version: '1.21'
 authors:
   - Oceangrad
