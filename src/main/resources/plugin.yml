@@ -1,5 +1,5 @@
 name: DeadFlower
-version: '1.0'
+version: '2.0'
 main: team.lma.deadFlower.DeadFlower
 api-version: '1.21'
 authors:
