@@ -33,24 +33,19 @@ public class Flower {
     }
 
     public static Item InitializeFlowerAtPlayer(Material flowerType, Player player) {
-        ItemStack flowerStack = new ItemStack(flowerType);
-        FlowerEffect flowerEffect = FlowerCollection.getFlowerEffectByMaterial(flowerType);
-        ItemMeta flowerMeta = flowerStack.getItemMeta();
-        flowerMeta.getPersistentDataContainer().set(NamespacedKey.fromString("player"), PersistentDataType.STRING, player.getDisplayName());
-        flowerMeta.getPersistentDataContainer().set(NamespacedKey.fromString("effect-type"), PersistentDataType.STRING, flowerEffect.getEffectType().getName());
-        flowerMeta.setDisplayName((String)flowerMeta.getPersistentDataContainer().get(NamespacedKey.fromString("player"), PersistentDataType.STRING));
-        flowerStack.setItemMeta(flowerMeta);
-        Item flower = player.getWorld().dropItem(player.getLocation(), flowerStack);
-        return flower;
+        ItemStack flowerStack = InitializeFlowerStack(flowerType, player);
+        return player.getWorld().dropItem(player.getLocation(), flowerStack);
     }
 
     public static ItemStack InitializeFlowerStack(Material flowerType, Player player) {
         ItemStack flowerStack = new ItemStack(flowerType);
         FlowerEffect flowerEffect = FlowerCollection.getFlowerEffectByMaterial(flowerType);
         ItemMeta flowerMeta = flowerStack.getItemMeta();
+
         flowerMeta.getPersistentDataContainer().set(NamespacedKey.fromString("player"), PersistentDataType.STRING, player.getDisplayName());
         flowerMeta.getPersistentDataContainer().set(NamespacedKey.fromString("effect-type"), PersistentDataType.STRING, flowerEffect.getEffectType().getName());
-        flowerMeta.setDisplayName((String)flowerMeta.getPersistentDataContainer().get(NamespacedKey.fromString("player"), PersistentDataType.STRING));
+        flowerMeta.setDisplayName(flowerMeta.getPersistentDataContainer().get(NamespacedKey.fromString("player"), PersistentDataType.STRING));
+
         flowerStack.setItemMeta(flowerMeta);
         return flowerStack;
     }
